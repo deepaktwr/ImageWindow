@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageWindow</string>
+    <string name="attach_text">Attach Image</string>
+</resources>
