@@ -11,12 +11,14 @@ import proj.me.imagewindow.window.Utils;
 public class ShadeFour {
     private static float WIDTH_1, WIDTH_2, WIDTH_3, HEIGHT_1, HEIGHT_2, HEIGHT_3, WIDTH_4, HEIGHT_4;
 
-    private static float MIN_WIDTH = Utils.MIN_WIDTH;
-    private static float MIN_HIGHT = Utils.MIN_HIGHT;
+    private static float MIN_WIDTH;
+    private static float MIN_HIGHT;
 
     public static BeanShade4 calculateDimentions(int width1, int height1, int width2, int height2, int width3, int height3,
                                                  int width4, int height4){
         WIDTH_1 = 0; WIDTH_2 = 0; WIDTH_3 = 0; HEIGHT_1 = 0; HEIGHT_2 = 0; HEIGHT_3 = 0; WIDTH_4 = 0; HEIGHT_4 = 0;
+        MIN_WIDTH = Utils.MIN_WIDTH;
+        MIN_HIGHT = Utils.MIN_HIGHT;
         BeanShade4 beanShade4 = new BeanShade4();
         List<ImageOrder> imageOrderList = new ArrayList<>();
 
@@ -24,8 +26,8 @@ public class ShadeFour {
         float min2Height = 2f * Utils.MIN_HIGHT / 1.5f;
         float min2Width = 2f * Utils.MIN_WIDTH / 1.5f;
 
-        float horzVertMinWidth = 4f * Utils.MAX_WIDTH / 3f;//75% of width
-        float vertHorzMinHeight = 4f * Utils.MAX_HEIGHT / 3f;//75% of height
+        float horzVertMinWidth = 0.7f * Utils.MAX_WIDTH;//70% of width
+        float vertHorzMinHeight = 0.7f * Utils.MAX_HEIGHT;//70% of height
 
         horzVertMinWidth = horzVertMinWidth >= min2Width ? horzVertMinWidth : min2Width;
         vertHorzMinHeight = vertHorzMinHeight >= min2Height ? vertHorzMinHeight : min2Height;
@@ -801,8 +803,8 @@ public class ShadeFour {
         }
         //case for multiple identical layout
 
-        float MAX_HEIGHT_DIFFERENCE = /*MIN_HIGHT /  5f*/80;
-        float MAX_WIDTH_DIFFERENCE = /*MIN_WIDTH / 5f*/80;
+        float MAX_HEIGHT_DIFFERENCE = MIN_HIGHT * 0.3f;//30%
+        float MAX_WIDTH_DIFFERENCE = MIN_WIDTH * 0.3f;//30%
         boolean varyWidth;
         //vary width or height
         if((varyWidth = Math.abs(height1 - height2) <= MAX_HEIGHT_DIFFERENCE && Math.abs(height3 - height4) <= MAX_HEIGHT_DIFFERENCE)
@@ -1212,7 +1214,7 @@ public class ShadeFour {
         WIDTH_1 = totalAvgWidth;
 
         float actualAvgWidth = (width3 + width4) / 2f;
-        float actualWidthSum = (width2 + actualAvgWidth) / 2f;
+        float actualWidthSum = width2 + actualAvgWidth;
 
         WIDTH_2 = totalAvgWidth * width2 / actualWidthSum;
         WIDTH_3 = WIDTH_4 = totalAvgWidth * actualAvgWidth / actualWidthSum;
@@ -1230,9 +1232,11 @@ public class ShadeFour {
 
         float avgHeight = (height2 + (HEIGHT_3 + HEIGHT_4)) / 2f;
 
+        float height3A = height3;
+
         //changing actual dimentions
         height3 = (int)(avgHeight * (float)height3 / (height3 + height4));
-        height4 = (int)(avgHeight * (float)height4 / (height3 + height4));
+        height4 = (int)(avgHeight * (float)height4 / (height3A + height4));
 
 
         //height calculation
@@ -1350,7 +1354,7 @@ public class ShadeFour {
         HEIGHT_1 = totalAvgHeight;
 
         float actualAvgHeight = (height3 + height4) / 2f;
-        float actualHeightSum = (height2 + actualAvgHeight) / 2f;
+        float actualHeightSum = height2 + actualAvgHeight;
 
         HEIGHT_2 = totalAvgHeight * height2 / actualHeightSum;
         HEIGHT_3 = HEIGHT_4 = totalAvgHeight * actualAvgHeight / actualHeightSum;
@@ -1368,9 +1372,11 @@ public class ShadeFour {
 
         float avgWidth = (width2 + (WIDTH_3 + WIDTH_4)) / 2f;
 
+
+        float width3A = width3;
         //changing actual dimentions
         width3 = (int)(avgWidth * (float)width3 / (width3 + width4));
-        width4 = (int)(avgWidth * (float)width4 / (width3 + width4));
+        width4 = (int)(avgWidth * (float)width4 / (width3A + width4));
 
 
         //width calculation
@@ -1819,7 +1825,7 @@ public class ShadeFour {
         float sumHeight = avgHeight1 + avgHeight2;
 
         if(sumHeight > Utils.MAX_HEIGHT){
-            float ratio = avgHeight1 / (actualAvgHeight1 + actualAvgHeight2);
+            float ratio = actualAvgHeight1 / (actualAvgHeight1 + actualAvgHeight2);
             avgHeight1 = Utils.MAX_HEIGHT * ratio;
             avgHeight2 = Utils.MAX_HEIGHT * (1f - ratio);
 
@@ -1846,34 +1852,32 @@ public class ShadeFour {
         WIDTH_3 = width3 < MIN_WIDTH ? MIN_WIDTH : width3;
         WIDTH_4 = width4 < MIN_WIDTH ? MIN_WIDTH : width4;
 
-        float sumWidth1 = WIDTH_1 + WIDTH_2;
-        if(sumWidth1 > Utils.MAX_WIDTH){
-            float ratio = Utils.MAX_WIDTH * width1 / (width1 + width2);
-            WIDTH_1 = Utils.MAX_WIDTH * ratio;
-            WIDTH_2 = Utils.MAX_WIDTH * (1f - ratio);
+        float avgSum = (WIDTH_1 + WIDTH_2 + WIDTH_1 + WIDTH_2) / 2f;
 
-            if(WIDTH_1 < MIN_WIDTH){
-                WIDTH_1 = MIN_WIDTH;
-                if(MIN_WIDTH + WIDTH_2 > Utils.MAX_WIDTH) WIDTH_2 = Utils.MAX_WIDTH - MIN_WIDTH;
-            } else if(WIDTH_2 < MIN_WIDTH){
-                WIDTH_2  = MIN_WIDTH;
-                if(MIN_WIDTH + WIDTH_1 > Utils.MAX_WIDTH) WIDTH_1 = Utils.MAX_WIDTH - MIN_WIDTH;
-            }
+        if(avgSum > Utils.MAX_WIDTH) avgSum = Utils.MAX_WIDTH;
+
+        float ratio1 = width1 / (width1 + width2);
+        WIDTH_1 = avgSum * ratio1;
+        WIDTH_2 = avgSum * (1f - ratio1);
+
+        if(WIDTH_1 < MIN_WIDTH){
+            WIDTH_1 = MIN_WIDTH;
+            if(MIN_WIDTH + WIDTH_2 > Utils.MAX_WIDTH) WIDTH_2 = avgSum - MIN_WIDTH;
+        } else if(WIDTH_2 < MIN_WIDTH){
+            WIDTH_2  = MIN_WIDTH;
+            if(MIN_WIDTH + WIDTH_1 > Utils.MAX_WIDTH) WIDTH_1 = avgSum - MIN_WIDTH;
         }
 
-        float sumWidth2 = WIDTH_3 + WIDTH_4;
-        if(sumWidth2 > Utils.MAX_WIDTH){
-            float ratio = Utils.MAX_WIDTH * width3 / (width3 + width4);
-            WIDTH_3 = Utils.MAX_WIDTH * ratio;
-            WIDTH_4 = Utils.MAX_WIDTH * (1f - ratio);
+        float ratio2 = width3 / (width3 + width4);
+        WIDTH_3 = avgSum * ratio2;
+        WIDTH_4 = avgSum * (1f - ratio2);
 
-            if(WIDTH_3 < MIN_WIDTH){
-                WIDTH_3 = MIN_WIDTH;
-                if(MIN_WIDTH + WIDTH_4 > Utils.MAX_WIDTH) WIDTH_4 = Utils.MAX_WIDTH - MIN_WIDTH;
-            } else if(WIDTH_4 < MIN_WIDTH){
-                WIDTH_4  = MIN_WIDTH;
-                if(MIN_WIDTH + WIDTH_3 > Utils.MAX_WIDTH) WIDTH_3 = Utils.MAX_WIDTH - MIN_WIDTH;
-            }
+        if(WIDTH_3 < MIN_WIDTH){
+            WIDTH_3 = MIN_WIDTH;
+            if(MIN_WIDTH + WIDTH_4 > Utils.MAX_WIDTH) WIDTH_4 = avgSum - MIN_WIDTH;
+        } else if(WIDTH_4 < MIN_WIDTH){
+            WIDTH_4  = MIN_WIDTH;
+            if(MIN_WIDTH + WIDTH_3 > Utils.MAX_WIDTH) WIDTH_3 = avgSum - MIN_WIDTH;
         }
     }
     private static void calculateWidthAndHeightVaryHeight(){
@@ -1902,7 +1906,7 @@ public class ShadeFour {
         float sumWidth = avgWidth1 + avgWidth2;
 
         if(sumWidth > Utils.MAX_WIDTH){
-            float ratio = avgWidth1 / (actualAvgWidth1 + actualAvgWidth2);
+            float ratio = actualAvgWidth1 / (actualAvgWidth1 + actualAvgWidth2);
             avgWidth1 = Utils.MAX_WIDTH * ratio;
             avgWidth2 = Utils.MAX_WIDTH * (1f - ratio);
 
@@ -1930,34 +1934,31 @@ public class ShadeFour {
         HEIGHT_3 = height3 < MIN_HIGHT ? MIN_HIGHT : height3;
         HEIGHT_4 = height4 < MIN_HIGHT ? MIN_HIGHT : height4;
 
-        float sumHeight1 = HEIGHT_1 + HEIGHT_2;
-        if(sumHeight1 > Utils.MAX_HEIGHT){
-            float ratio = Utils.MAX_HEIGHT * height1 / (height1 + height2);
-            HEIGHT_1 = Utils.MAX_HEIGHT * ratio;
-            HEIGHT_2 = Utils.MAX_HEIGHT * (1f - ratio);
+        float avgHeight = (HEIGHT_1 + HEIGHT_2 + HEIGHT_3 + HEIGHT_4) / 2f;
+        if(avgHeight > Utils.MAX_HEIGHT) avgHeight = Utils.MAX_HEIGHT;
 
-            if(HEIGHT_1 < MIN_HIGHT){
-                HEIGHT_1 = MIN_HIGHT;
-                if(MIN_HIGHT + HEIGHT_2 > Utils.MAX_HEIGHT) HEIGHT_2 = Utils.MAX_HEIGHT - MIN_HIGHT;
-            } else if(HEIGHT_2 < MIN_HIGHT){
-                HEIGHT_2  = MIN_HIGHT;
-                if(MIN_HIGHT + HEIGHT_1 > Utils.MAX_HEIGHT) HEIGHT_1 = Utils.MAX_HEIGHT - MIN_HIGHT;
-            }
+        float ratio1 = height1 / (height1 + height2);
+        HEIGHT_1 = avgHeight * ratio1;
+        HEIGHT_2 = avgHeight * (1f - ratio1);
+
+        if(HEIGHT_1 < MIN_HIGHT){
+            HEIGHT_1 = MIN_HIGHT;
+            if(MIN_HIGHT + HEIGHT_2 > Utils.MAX_HEIGHT) HEIGHT_2 = avgHeight - MIN_HIGHT;
+        } else if(HEIGHT_2 < MIN_HIGHT){
+            HEIGHT_2  = MIN_HIGHT;
+            if(MIN_HIGHT + HEIGHT_1 > Utils.MAX_HEIGHT) HEIGHT_1 = avgHeight - MIN_HIGHT;
         }
 
-        float sumHeight2 = HEIGHT_3 + HEIGHT_4;
-        if(sumHeight2 > Utils.MAX_HEIGHT){
-            float ratio = Utils.MAX_HEIGHT * height3 / (height3 + height4);
-            HEIGHT_3 = Utils.MAX_HEIGHT * ratio;
-            HEIGHT_4 = Utils.MAX_HEIGHT * (1f - ratio);
+        float ratio2 = height3 / (height3 + height4);
+        HEIGHT_3 = avgHeight * ratio2;
+        HEIGHT_4 = avgHeight * (1f - ratio2);
 
-            if(HEIGHT_3 < MIN_HIGHT){
-                HEIGHT_3 = MIN_HIGHT;
-                if(MIN_HIGHT + HEIGHT_4 > Utils.MAX_HEIGHT) HEIGHT_4 = Utils.MAX_HEIGHT - MIN_HIGHT;
-            } else if(HEIGHT_4 < MIN_HIGHT){
-                HEIGHT_4  = MIN_HIGHT;
-                if(MIN_HIGHT + HEIGHT_3 > Utils.MAX_HEIGHT) HEIGHT_3 = Utils.MAX_HEIGHT - MIN_HIGHT;
-            }
+        if(HEIGHT_3 < MIN_HIGHT){
+            HEIGHT_3 = MIN_HIGHT;
+            if(MIN_HIGHT + HEIGHT_4 > Utils.MAX_HEIGHT) HEIGHT_4 = avgHeight - MIN_HIGHT;
+        } else if(HEIGHT_4 < MIN_HIGHT){
+            HEIGHT_4  = MIN_HIGHT;
+            if(MIN_HIGHT + HEIGHT_3 > Utils.MAX_HEIGHT) HEIGHT_3 = avgHeight - MIN_HIGHT;
         }
     }
 }

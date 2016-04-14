@@ -42,6 +42,16 @@ public class ShadeFourTest {
         parallelMinWidth = parallelMinWidth >= min3Width ? parallelMinWidth : min3Width;
         parallelMinHeight = parallelMinHeight >= min3Height ? parallelMinHeight : min3Height;
 
+
+        float min2Height = 2f * Utils.MIN_HIGHT / 1.5f;
+        float min2Width = 2f * Utils.MIN_WIDTH / 1.5f;
+
+        float horzVertMinWidth = 0.7f * Utils.MAX_WIDTH;//70% of width
+        float vertHorzMinHeight = 0.7f * Utils.MAX_HEIGHT;//70% of height
+
+        horzVertMinWidth = horzVertMinWidth >= min2Width ? horzVertMinWidth : min2Width;
+        vertHorzMinHeight = vertHorzMinHeight >= min2Height ? vertHorzMinHeight : min2Height;
+
         DimentionsModel[] dimentionsModels = new DimentionsModel[]{
                 //layout type = vert
                 /*new DimentionsModel(new int[]{
@@ -201,12 +211,185 @@ public class ShadeFourTest {
                         800, 60,
                 }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.VERT_DOUBLE),*/
 
-                new DimentionsModel(new int[]{
-                        500, 350,
-                        300, 200,
+                //horz double
+                /*new DimentionsModel(new int[]{
+                        500, 3500,
+                        300, 2000,
                         parallelMinWidth + 200, 50,
                         800, 60,
                 }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        50, 800,
+                        20, 50,
+                        50, 750,
+                        80, 50,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.THIRD, ImageOrder.SECOND, ImageOrder.FOURTH}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        500, 3500,
+                        200, 50,
+                        500, 60,
+                        300, (int)Utils.MAX_HEIGHT,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.FOURTH, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        300, (int)Utils.MAX_HEIGHT,
+                        500, 3500,
+                        200, 500,
+                        500, 600,
+                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.FIRST, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        200, 50,
+                        300, (int)Utils.MAX_HEIGHT,
+                        50, 700,
+                        50, 600,
+                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.FOURTH}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        200, 50,
+                        30, 700,
+                        500, 60,
+                        50, 680,
+                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.THIRD}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        50, 680,
+                        200, 50,
+                        30, 700,
+                        500, 60,
+                }, new ImageOrder[]{ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.FOURTH}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        200, 500,
+                        500, 780,
+                        300, 800,
+                        500, 600,
+                }, new ImageOrder[]{ImageOrder.THIRD, ImageOrder.SECOND, ImageOrder.FIRST, ImageOrder.FOURTH}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        2000, 5000,
+                        5000, 6000,
+                        3000, 8000,
+                        5000, 7800,
+                }, new ImageOrder[]{ImageOrder.THIRD, ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        5000, 7800,
+                        2000, 5000,
+                        5000, 6000,
+                        3000, 8000,
+                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        500, 780,
+                        30, 5000,
+                        500, 600,
+                        30, 8000,
+                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.SECOND, ImageOrder.FIRST, ImageOrder.THIRD}, LayoutType.HORZ_DOUBLE),
+
+                new DimentionsModel(new int[]{
+                        20, 50,
+                        50, 60,
+                        50, 780,
+                        30, 800,
+                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.HORZ_DOUBLE),*/
+
+                //VERT_HORZ
+                /*new DimentionsModel(new int[]{
+                        5000, 800,
+                        200, 2000,
+                        500, 600,
+                        300, 800,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.VERT_HORZ),
+
+                new DimentionsModel(new int[]{
+                        5000, 50,
+                        50, 500,
+                        20, 600,
+                        30, 80,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.THIRD, ImageOrder.SECOND, ImageOrder.FOURTH}, LayoutType.VERT_HORZ),
+
+                new DimentionsModel(new int[]{
+                        800, 80,
+                        50, 60,
+                        200, 200,
+                        200, (int)vertHorzMinHeight + 20,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.FOURTH, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.VERT_HORZ),
+
+
+                new DimentionsModel(new int[]{
+                        100, (int)vertHorzMinHeight + 20,
+                        600, 100,
+                        100, 100,
+                        100, 100,
+                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.FIRST, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.VERT_HORZ),
+
+                new DimentionsModel(new int[]{
+                        1000, 1000,
+                        6000, 1000,
+                        1000, 3000,
+                        1000, 1000,
+                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.FOURTH}, LayoutType.VERT_HORZ),
+
+                new DimentionsModel(new int[]{
+                        300, 300,
+                        (int)Utils.MAX_WIDTH, 10,
+                        10, 10,
+                        10, (int)Utils.MAX_HEIGHT,
+                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.THIRD}, LayoutType.VERT_HORZ),*/
+
+                //HORZ_VERT
+                /*new DimentionsModel(new int[]{
+                        50, 8000,
+                        2000, 2,
+                        500, 600,
+                        300, 800,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.HORZ_VERT),
+
+                new DimentionsModel(new int[]{
+                        500, (int)Utils.MAX_HEIGHT,
+                        50, parallelMinHeight,
+                        (int)Utils.MAX_WIDTH - 2, 200,
+                        parallelMinWidth, 80,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.THIRD, ImageOrder.SECOND, ImageOrder.FOURTH}, LayoutType.HORZ_VERT),
+
+                new DimentionsModel(new int[]{
+                        50, 720,
+                        200, 200,
+                        500, 600,
+                        600, 100,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.FOURTH, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.HORZ_VERT),*/
+
+                //VARY_WIDTH
+                /*new DimentionsModel(new int[]{
+                        50, 400,
+                        200,350,
+                        500, 200,
+                        300, 150,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),
+
+                new DimentionsModel(new int[]{
+                        50, 40,
+                        50,40,
+                        50, 40,
+                        50, 40,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),
+
+                new DimentionsModel(new int[]{
+                        500, 400,
+                        500,400,
+                        500, 400,
+                        500, 400,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),*/
+
+                new DimentionsModel(new int[]{
+                        350, 250,
+                        50,500,
+                        500, 200,
+                        50, 400,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.THIRD, ImageOrder.SECOND, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),
 
         };
         return Arrays.asList(dimentionsModels);
@@ -299,6 +482,8 @@ public class ShadeFourTest {
                 assertTrue(beanShade4Result.getHeight3() >= MIN_HEIGHT - 1);
 
                 assertTrue(beanShade4Result.getWidth1() <= Utils.MAX_WIDTH);
+
+                assertTrue(beanShade4Result.getHeight1() + beanShade4Result.getHeight2() + beanShade4Result.getHeight3() <= Utils.MAX_HEIGHT);
                 break;
             case HORZ_DOUBLE:
                 MIN_HEIGHT = Utils.MIN_HIGHT;
@@ -317,6 +502,100 @@ public class ShadeFourTest {
                 assertTrue(beanShade4Result.getWidth3() >= MIN_WIDTH - 1);
 
                 assertTrue(beanShade4Result.getHeight1() <= Utils.MAX_HEIGHT);
+
+                assertTrue(beanShade4Result.getWidth1() + beanShade4Result.getWidth2() + beanShade4Result.getWidth3() <= Utils.MAX_WIDTH);
+                break;
+            case VERT_HORZ:
+                MIN_HEIGHT = Utils.MIN_HIGHT / 1.5f;
+                MIN_WIDTH = Utils.MIN_WIDTH;
+
+                assertTrue(beanShade4Result.getWidth1() >= beanShade4Result.getWidth2() + beanShade4Result.getWidth3() - 2);
+
+                assertTrue(beanShade4Result.getHeight1() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight3() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight4() >= MIN_HEIGHT - 1);
+
+                assertTrue(beanShade4Result.getHeight2() >= beanShade4Result.getHeight3() + beanShade4Result.getHeight4() - 2);
+
+                assertTrue(beanShade4Result.getWidth3() == beanShade4Result.getWidth4());
+
+                assertTrue(beanShade4Result.getWidth2() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth3() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth4() >= MIN_WIDTH - 1);
+
+                assertTrue(beanShade4Result.getWidth1() <= Utils.MAX_WIDTH);
+                assertTrue(beanShade4Result.getHeight1() + beanShade4Result.getHeight2() <= Utils.MAX_HEIGHT);
+                break;
+
+            case HORZ_VERT:
+                MIN_HEIGHT = Utils.MIN_HIGHT;
+                MIN_WIDTH = Utils.MIN_WIDTH / 1.5f;
+
+                assertTrue(beanShade4Result.getHeight1() >= beanShade4Result.getHeight2() + beanShade4Result.getHeight3() - 2);
+
+                assertTrue(beanShade4Result.getWidth1() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth3() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth4() >= MIN_WIDTH - 1);
+
+                assertTrue(beanShade4Result.getWidth2() >= beanShade4Result.getWidth3() + beanShade4Result.getWidth4() - 2);
+
+                assertTrue(beanShade4Result.getHeight3() == beanShade4Result.getHeight4());
+
+                assertTrue(beanShade4Result.getHeight2() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight3() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight4() >= MIN_HEIGHT - 1);
+
+                assertTrue(beanShade4Result.getHeight1() <= Utils.MAX_HEIGHT);
+                assertTrue(beanShade4Result.getWidth1() + beanShade4Result.getWidth2() <= Utils.MAX_WIDTH);
+                break;
+
+            case IDENTICAL_VARY_WIDTH:
+                MIN_HEIGHT = Utils.MIN_HIGHT;
+                MIN_WIDTH = Utils.MIN_WIDTH;
+
+                assertTrue(beanShade4Result.getHeight1() == beanShade4Result.getHeight2());
+                assertTrue(beanShade4Result.getHeight3() == beanShade4Result.getHeight4());
+
+                assertTrue(beanShade4Result.getWidth1() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth2() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth3() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth4() >= MIN_WIDTH - 1);
+
+
+                assertTrue(beanShade4Result.getHeight1() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight2() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight3() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight4() >= MIN_HEIGHT - 1);
+
+                assertTrue(beanShade4Result.getWidth1() + beanShade4Result.getWidth2() <= beanShade4Result.getWidth3() + beanShade4Result.getWidth4());
+                assertTrue(beanShade4Result.getHeight1() + beanShade4Result.getHeight3() <= beanShade4Result.getHeight2() + beanShade4Result.getHeight4());
+
+                assertTrue(beanShade4Result.getHeight1() + beanShade4Result.getHeight3() <= Utils.MAX_HEIGHT);
+                assertTrue(beanShade4Result.getWidth1() + beanShade4Result.getWidth2() <= Utils.MAX_WIDTH);
+                break;
+            case IDENTICAL_VARY_HEIGHT:
+                MIN_HEIGHT = Utils.MIN_HIGHT;
+                MIN_WIDTH = Utils.MIN_WIDTH;
+
+                assertTrue(beanShade4Result.getWidth1() == beanShade4Result.getWidth2());
+                assertTrue(beanShade4Result.getWidth3() == beanShade4Result.getWidth4());
+
+                assertTrue(beanShade4Result.getWidth1() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth2() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth3() >= MIN_WIDTH - 1);
+                assertTrue(beanShade4Result.getWidth4() >= MIN_WIDTH - 1);
+
+
+                assertTrue(beanShade4Result.getHeight1() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight2() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight3() >= MIN_HEIGHT - 1);
+                assertTrue(beanShade4Result.getHeight4() >= MIN_HEIGHT - 1);
+
+                assertTrue(beanShade4Result.getWidth1() + beanShade4Result.getWidth3() <= beanShade4Result.getWidth2() + beanShade4Result.getWidth4());
+                assertTrue(beanShade4Result.getHeight1() + beanShade4Result.getHeight2() <= beanShade4Result.getHeight3() + beanShade4Result.getHeight4());
+
+                assertTrue(beanShade4Result.getHeight1() + beanShade4Result.getHeight2() <= Utils.MAX_HEIGHT);
+                assertTrue(beanShade4Result.getWidth1() + beanShade4Result.getWidth3() <= Utils.MAX_WIDTH);
                 break;
         }
 
