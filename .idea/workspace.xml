@@ -11,17 +11,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33895cd8-2777-4681-9f74-ee9f3159a72c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_four.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_width.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/ImageShading.java" afterPath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/ImageShading.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java" afterPath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/ImageShadingFour.java" afterPath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/ImageShadingFour.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeTwo.java" afterPath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/window/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/window/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_double_horz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_double_horz.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_double_vert.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_double_vert.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_double.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_double.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_vert.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_vert.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_height.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_height.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_width.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_width.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_double.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_double.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_horz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_horz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/test/java/proj/me/imagewindow/images/dimentions/ShadeFourTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/proj/me/imagewindow/images/dimentions/ShadeFourTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_single.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_single.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_horz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_horz.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_horz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_horz.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_vert.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_vert.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_vert.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_vert.xml" />
     </list>
     <ignored path="ImageWindow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,49 +58,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ImageShading.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/ImageShading.java">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/window/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageShadingFour.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/ImageShadingFour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.169184">
-              <caret line="138" column="61" selection-start-line="138" selection-start-column="61" selection-end-line="138" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.5862069">
+              <caret line="218" column="40" selection-start-line="218" selection-start-column="40" selection-end-line="218" selection-end-column="40" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2004#2005#0" expanded="true" />
+                <element signature="e#2058#2059#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_multiple_vert_horz.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_horz.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="ImageShadingOne.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_one/ImageShadingOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.33333334">
-              <caret line="136" column="56" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_multiple_horz_vert.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_vert.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="ImageShadingTwo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_two/ImageShadingTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.666667">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="110" column="8" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -101,28 +95,20 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_three/ImageShadingThree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="115" column="22" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
+              <caret line="161" column="8" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShadeFourTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/proj/me/imagewindow/images/dimentions/ShadeFourTest.java">
+      <file leaf-file-name="ImageShadingFour.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/ImageShadingFour.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="402" column="0" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShadeThree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeThree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
+              <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1826,7 +1812,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/round_bg.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/ImageShadingThree.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_two/BindingShadeTwo.java" />
@@ -1834,49 +1819,50 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values-hdpi/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-xhdpi/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-xxhdpi/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_vert.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_double_horz.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_horz.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/BindingShadeFour.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_imageview.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/shade_one.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeOne.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_one/ImageShadingOne.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_double_vert.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/BeanShade1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ImageOrder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/BeanShade2.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_two/ImageShadingTwo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/BeanShade3.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_horz.xml" />
         <option value="/home/deepak_t/Desktop/Shade3.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/ViewImage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/window/Utils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_vert.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/view_four_vary_height.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_four.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_double.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeTwo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/BeanShade4.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/LayoutType.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/proj/me/imagewindow/images/dimentions/ShadeTwoTest.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/proj/me/imagewindow/images/dimentions/ShadeThreeTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeThree.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_width.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_double.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/ImageShading.java" />
+        <option value="$PROJECT_DIR$/app/src/test/java/proj/me/imagewindow/images/dimentions/ShadeFourTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeTwo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_single.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_double_horz.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_double_vert.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_vert.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_vert.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_horz.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_tripple_horz.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_horz.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_double.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_width.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_height.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_vert.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_double.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/window/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_one/ImageShadingOne.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_two/ImageShadingTwo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_three/ImageShadingThree.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/ImageShadingFour.java" />
-        <option value="$PROJECT_DIR$/app/src/test/java/proj/me/imagewindow/images/dimentions/ShadeFourTest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_horz.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_vert.xml" />
       </list>
     </option>
   </component>
@@ -2407,7 +2393,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.47803807" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32803467" sideWeight="0.47803807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7066474" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -2432,16 +2418,16 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="66" y="179" width="1166" height="596" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="66" y="179" width="1166" height="596" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.015895953" sideWeight="0.47803807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32658958" sideWeight="0.50951684" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49048316" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2551,7 +2537,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java</url>
-          <line>1615</line>
+          <line>1619</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -2581,13 +2567,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java</url>
-          <line>1200</line>
+          <line>1202</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java</url>
-          <line>1806</line>
+          <line>1810</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -2599,7 +2585,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java</url>
-          <line>1854</line>
+          <line>1858</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
@@ -2615,20 +2601,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ImageWindow.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/BindingShadeFour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27492446">
@@ -2707,16 +2679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_double_vert.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3333335">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../ImageWindow/WVS/app/src/main/java/com/example/wvsdatacollection/junk/dynamic_views/images/ImageShadingTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03021148">
@@ -2753,71 +2715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_one/ImageShadingOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_double_horz.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.89700997">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_tripple_vert.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53156143">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_horz.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4584718">
-          <caret line="122" column="67" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///home/deepak_t/Desktop/Shade3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="52" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_vert.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/window/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48640484">
-          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_two/ImageShadingTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2871,28 +2772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0543807">
-          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2903,135 +2786,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_width.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#945#959#0" expanded="true" />
-            <element signature="e#999#1013#0" expanded="true" />
-            <element signature="e#2009#2022#0" expanded="true" />
-            <element signature="e#2059#2072#0" expanded="true" />
-            <element signature="e#2110#2123#0" expanded="true" />
-            <element signature="e#2159#2172#0" expanded="true" />
-            <element signature="e#2810#2824#0" expanded="true" />
-            <element signature="e#2863#2877#0" expanded="true" />
-            <element signature="e#3938#3951#0" expanded="true" />
-            <element signature="e#3988#4001#0" expanded="true" />
-            <element signature="e#4039#4052#0" expanded="true" />
-            <element signature="e#4088#4101#0" expanded="true" />
-            <element signature="e#4739#4753#0" expanded="true" />
-            <element signature="e#4791#4805#0" expanded="true" />
-            <element signature="e#5802#5815#0" expanded="true" />
-            <element signature="e#5852#5865#0" expanded="true" />
-            <element signature="e#5903#5916#0" expanded="true" />
-            <element signature="e#5952#5965#0" expanded="true" />
-            <element signature="e#6670#6684#0" expanded="true" />
-            <element signature="e#6722#6736#0" expanded="true" />
-            <element signature="e#7799#7812#0" expanded="true" />
-            <element signature="e#7849#7862#0" expanded="true" />
-            <element signature="e#7900#7913#0" expanded="true" />
-            <element signature="e#7949#7962#0" expanded="true" />
-            <element signature="e#8921#8934#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_double.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.1860466">
-          <caret line="171" column="17" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
-          <folding>
-            <element signature="e#849#863#0" expanded="true" />
-            <element signature="e#1859#1872#0" expanded="true" />
-            <element signature="e#1909#1922#0" expanded="true" />
-            <element signature="e#1960#1973#0" expanded="true" />
-            <element signature="e#2009#2022#0" expanded="true" />
-            <element signature="e#2725#2739#0" expanded="true" />
-            <element signature="e#2779#2793#0" expanded="true" />
-            <element signature="e#3854#3867#0" expanded="true" />
-            <element signature="e#3904#3917#0" expanded="true" />
-            <element signature="e#3955#3968#0" expanded="true" />
-            <element signature="e#4004#4017#0" expanded="true" />
-            <element signature="e#4597#4611#0" expanded="true" />
-            <element signature="e#4650#4664#0" expanded="true" />
-            <element signature="e#5787#5800#0" expanded="true" />
-            <element signature="e#5837#5850#0" expanded="true" />
-            <element signature="e#5888#5901#0" expanded="true" />
-            <element signature="e#5937#5950#0" expanded="true" />
-            <element signature="e#6652#6666#0" expanded="true" />
-            <element signature="e#6704#6718#0" expanded="true" />
-            <element signature="e#7780#7793#0" expanded="true" />
-            <element signature="e#7830#7843#0" expanded="true" />
-            <element signature="e#7881#7894#0" expanded="true" />
-            <element signature="e#7930#7943#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_double.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.421927">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33554816">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8239202">
-          <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeThree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_height.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36877078">
-          <caret line="171" column="47" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/ImageShading.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3039,46 +2800,584 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="402" column="0" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.359516">
+          <caret line="466" column="73" selection-start-line="466" selection-start-column="73" selection-end-line="466" selection-end-column="73" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeFour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.646526">
+          <caret line="1318" column="13" selection-start-line="1318" selection-start-column="13" selection-end-line="1318" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/dimentions/ShadeTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06042296">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_double_horz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <element signature="e#876#890#0" expanded="true" />
+            <element signature="e#1924#1937#0" expanded="true" />
+            <element signature="e#1974#1987#0" expanded="true" />
+            <element signature="e#2025#2038#0" expanded="true" />
+            <element signature="e#2074#2087#0" expanded="true" />
+            <element signature="e#2691#2705#0" expanded="true" />
+            <element signature="e#2736#2750#0" expanded="true" />
+            <element signature="e#3888#3901#0" expanded="true" />
+            <element signature="e#3938#3951#0" expanded="true" />
+            <element signature="e#3989#4002#0" expanded="true" />
+            <element signature="e#4038#4051#0" expanded="true" />
+            <element signature="e#4769#4783#0" expanded="true" />
+            <element signature="e#4814#4828#0" expanded="true" />
+            <element signature="e#4866#4878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_double_vert.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9421487">
+          <caret line="42" column="62" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+          <folding>
+            <element signature="e#1921#1934#0" expanded="true" />
+            <element signature="e#1971#1984#0" expanded="true" />
+            <element signature="e#2022#2035#0" expanded="true" />
+            <element signature="e#2071#2084#0" expanded="true" />
+            <element signature="e#2790#2804#0" expanded="true" />
+            <element signature="e#3842#3855#0" expanded="true" />
+            <element signature="e#3892#3905#0" expanded="true" />
+            <element signature="e#3943#3956#0" expanded="true" />
+            <element signature="e#3992#4005#0" expanded="true" />
+            <element signature="e#4722#4734#0" expanded="true" />
+            <element signature="e#4765#4777#0" expanded="true" />
+            <element signature="e#4815#4829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_tripple_vert.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.666667">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <folding>
+            <element signature="e#1948#1961#0" expanded="true" />
+            <element signature="e#1998#2011#0" expanded="true" />
+            <element signature="e#2049#2062#0" expanded="true" />
+            <element signature="e#2098#2111#0" expanded="true" />
+            <element signature="e#2845#2859#0" expanded="true" />
+            <element signature="e#2888#2902#0" expanded="true" />
+            <element signature="e#2940#2954#0" expanded="true" />
+            <element signature="e#4049#4062#0" expanded="true" />
+            <element signature="e#4099#4112#0" expanded="true" />
+            <element signature="e#4150#4163#0" expanded="true" />
+            <element signature="e#4199#4212#0" expanded="true" />
+            <element signature="e#5059#5073#0" expanded="true" />
+            <element signature="e#5104#5118#0" expanded="true" />
+            <element signature="e#5156#5170#0" expanded="true" />
+            <element signature="e#6262#6275#0" expanded="true" />
+            <element signature="e#6312#6325#0" expanded="true" />
+            <element signature="e#6363#6376#0" expanded="true" />
+            <element signature="e#6412#6425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_vert.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1487603">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+          <folding>
+            <element signature="e#1952#1965#0" expanded="true" />
+            <element signature="e#2002#2015#0" expanded="true" />
+            <element signature="e#2053#2066#0" expanded="true" />
+            <element signature="e#2102#2115#0" expanded="true" />
+            <element signature="e#2739#2753#0" expanded="true" />
+            <element signature="e#2794#2808#0" expanded="true" />
+            <element signature="e#3903#3916#0" expanded="true" />
+            <element signature="e#3953#3966#0" expanded="true" />
+            <element signature="e#4004#4017#0" expanded="true" />
+            <element signature="e#4053#4066#0" expanded="true" />
+            <element signature="e#4694#4708#0" expanded="true" />
+            <element signature="e#5800#5813#0" expanded="true" />
+            <element signature="e#5850#5863#0" expanded="true" />
+            <element signature="e#5901#5914#0" expanded="true" />
+            <element signature="e#5950#5963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_tripple_parr_horz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3666666">
+          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+          <folding>
+            <element signature="e#884#898#0" expanded="true" />
+            <element signature="e#1990#2003#0" expanded="true" />
+            <element signature="e#2040#2053#0" expanded="true" />
+            <element signature="e#2091#2104#0" expanded="true" />
+            <element signature="e#2140#2153#0" expanded="true" />
+            <element signature="e#2829#2843#0" expanded="true" />
+            <element signature="e#2872#2886#0" expanded="true" />
+            <element signature="e#2925#2939#0" expanded="true" />
+            <element signature="e#2970#2984#0" expanded="true" />
+            <element signature="e#4079#4092#0" expanded="true" />
+            <element signature="e#4129#4142#0" expanded="true" />
+            <element signature="e#4180#4193#0" expanded="true" />
+            <element signature="e#4229#4242#0" expanded="true" />
+            <element signature="e#4921#4935#0" expanded="true" />
+            <element signature="e#4966#4980#0" expanded="true" />
+            <element signature="e#6072#6085#0" expanded="true" />
+            <element signature="e#6122#6135#0" expanded="true" />
+            <element signature="e#6173#6186#0" expanded="true" />
+            <element signature="e#6222#6235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_single.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.666667">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="e#1523#1536#0" expanded="true" />
+            <element signature="e#1569#1582#0" expanded="true" />
+            <element signature="e#1616#1629#0" expanded="true" />
+            <element signature="e#1661#1674#0" expanded="true" />
+            <element signature="e#1742#1755#0" expanded="true" />
+            <element signature="e#2874#2887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_tripple_horz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <element signature="e#897#911#0" expanded="true" />
+            <element signature="e#940#954#0" expanded="true" />
+            <element signature="e#2046#2059#0" expanded="true" />
+            <element signature="e#2096#2109#0" expanded="true" />
+            <element signature="e#2147#2160#0" expanded="true" />
+            <element signature="e#2196#2209#0" expanded="true" />
+            <element signature="e#2943#2957#0" expanded="true" />
+            <element signature="e#2988#3002#0" expanded="true" />
+            <element signature="e#3043#3057#0" expanded="true" />
+            <element signature="e#4152#4165#0" expanded="true" />
+            <element signature="e#4202#4215#0" expanded="true" />
+            <element signature="e#4253#4266#0" expanded="true" />
+            <element signature="e#4302#4315#0" expanded="true" />
+            <element signature="e#5113#5127#0" expanded="true" />
+            <element signature="e#5158#5172#0" expanded="true" />
+            <element signature="e#5210#5224#0" expanded="true" />
+            <element signature="e#6316#6329#0" expanded="true" />
+            <element signature="e#6366#6379#0" expanded="true" />
+            <element signature="e#6417#6430#0" expanded="true" />
+            <element signature="e#6466#6479#0" expanded="true" />
+            <element signature="e#7839#7852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_horz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-66.333336">
+          <caret line="199" column="49" selection-start-line="199" selection-start-column="49" selection-end-line="199" selection-end-column="49" />
+          <folding>
+            <element signature="e#1959#1972#0" expanded="true" />
+            <element signature="e#2009#2022#0" expanded="true" />
+            <element signature="e#2060#2073#0" expanded="true" />
+            <element signature="e#2109#2122#0" expanded="true" />
+            <element signature="e#2847#2861#0" expanded="true" />
+            <element signature="e#2890#2904#0" expanded="true" />
+            <element signature="e#2942#2956#0" expanded="true" />
+            <element signature="e#4061#4074#0" expanded="true" />
+            <element signature="e#4111#4124#0" expanded="true" />
+            <element signature="e#4162#4175#0" expanded="true" />
+            <element signature="e#4211#4224#0" expanded="true" />
+            <element signature="e#4853#4867#0" expanded="true" />
+            <element signature="e#4898#4912#0" expanded="true" />
+            <element signature="e#4953#4967#0" expanded="true" />
+            <element signature="e#5005#5019#0" expanded="true" />
+            <element signature="e#6326#6339#0" expanded="true" />
+            <element signature="e#6376#6389#0" expanded="true" />
+            <element signature="e#6427#6440#0" expanded="true" />
+            <element signature="e#6476#6489#0" expanded="true" />
+            <element signature="e#7226#7240#0" expanded="true" />
+            <element signature="e#7271#7285#0" expanded="true" />
+            <element signature="e#7323#7337#0" expanded="true" />
+            <element signature="e#8601#8614#0" expanded="true" />
+            <element signature="e#8651#8664#0" expanded="true" />
+            <element signature="e#8702#8715#0" expanded="true" />
+            <element signature="e#8751#8764#0" expanded="true" />
+            <element signature="e#10086#10099#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_double.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-63.0">
+          <caret line="189" column="64" selection-start-line="189" selection-start-column="64" selection-end-line="189" selection-end-column="64" />
+          <folding>
+            <element signature="e#1965#1978#0" expanded="true" />
+            <element signature="e#2015#2028#0" expanded="true" />
+            <element signature="e#2066#2079#0" expanded="true" />
+            <element signature="e#2115#2128#0" expanded="true" />
+            <element signature="e#2991#3005#0" expanded="true" />
+            <element signature="e#3043#3057#0" expanded="true" />
+            <element signature="e#4162#4175#0" expanded="true" />
+            <element signature="e#4212#4225#0" expanded="true" />
+            <element signature="e#4263#4276#0" expanded="true" />
+            <element signature="e#4312#4325#0" expanded="true" />
+            <element signature="e#4964#4978#0" expanded="true" />
+            <element signature="e#5007#5021#0" expanded="true" />
+            <element signature="e#5059#5073#0" expanded="true" />
+            <element signature="e#6294#6307#0" expanded="true" />
+            <element signature="e#6344#6357#0" expanded="true" />
+            <element signature="e#6395#6408#0" expanded="true" />
+            <element signature="e#6444#6457#0" expanded="true" />
+            <element signature="e#7209#7223#0" expanded="true" />
+            <element signature="e#7254#7268#0" expanded="true" />
+            <element signature="e#7306#7320#0" expanded="true" />
+            <element signature="e#8540#8553#0" expanded="true" />
+            <element signature="e#8590#8603#0" expanded="true" />
+            <element signature="e#8641#8654#0" expanded="true" />
+            <element signature="e#8690#8703#0" expanded="true" />
+            <element signature="e#10025#10038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-65.666664">
+          <caret line="197" column="49" selection-start-line="197" selection-start-column="49" selection-end-line="197" selection-end-column="49" />
+          <folding>
+            <element signature="e#1960#1973#0" expanded="true" />
+            <element signature="e#2010#2023#0" expanded="true" />
+            <element signature="e#2061#2074#0" expanded="true" />
+            <element signature="e#2110#2123#0" expanded="true" />
+            <element signature="e#2856#2870#0" expanded="true" />
+            <element signature="e#2899#2913#0" expanded="true" />
+            <element signature="e#2951#2965#0" expanded="true" />
+            <element signature="e#4070#4083#0" expanded="true" />
+            <element signature="e#4120#4133#0" expanded="true" />
+            <element signature="e#4171#4184#0" expanded="true" />
+            <element signature="e#4220#4233#0" expanded="true" />
+            <element signature="e#4866#4880#0" expanded="true" />
+            <element signature="e#4911#4925#0" expanded="true" />
+            <element signature="e#4965#4979#0" expanded="true" />
+            <element signature="e#5008#5022#0" expanded="true" />
+            <element signature="e#5060#5074#0" expanded="true" />
+            <element signature="e#6290#6303#0" expanded="true" />
+            <element signature="e#6340#6353#0" expanded="true" />
+            <element signature="e#6391#6404#0" expanded="true" />
+            <element signature="e#6440#6453#0" expanded="true" />
+            <element signature="e#7187#7201#0" expanded="true" />
+            <element signature="e#7232#7246#0" expanded="true" />
+            <element signature="e#7284#7298#0" expanded="true" />
+            <element signature="e#8520#8533#0" expanded="true" />
+            <element signature="e#8570#8583#0" expanded="true" />
+            <element signature="e#8621#8634#0" expanded="true" />
+            <element signature="e#8670#8683#0" expanded="true" />
+            <element signature="e#10040#10053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_width.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
+          <folding>
+            <element signature="e#999#1013#0" expanded="true" />
+            <element signature="e#1042#1056#0" expanded="true" />
+            <element signature="e#2159#2172#0" expanded="true" />
+            <element signature="e#2209#2222#0" expanded="true" />
+            <element signature="e#2260#2273#0" expanded="true" />
+            <element signature="e#2309#2322#0" expanded="true" />
+            <element signature="e#2959#2973#0" expanded="true" />
+            <element signature="e#3012#3026#0" expanded="true" />
+            <element signature="e#3057#3071#0" expanded="true" />
+            <element signature="e#4287#4300#0" expanded="true" />
+            <element signature="e#4337#4350#0" expanded="true" />
+            <element signature="e#4388#4401#0" expanded="true" />
+            <element signature="e#4437#4450#0" expanded="true" />
+            <element signature="e#5087#5101#0" expanded="true" />
+            <element signature="e#5130#5144#0" expanded="true" />
+            <element signature="e#5182#5196#0" expanded="true" />
+            <element signature="e#6300#6313#0" expanded="true" />
+            <element signature="e#6350#6363#0" expanded="true" />
+            <element signature="e#6401#6414#0" expanded="true" />
+            <element signature="e#6450#6463#0" expanded="true" />
+            <element signature="e#7166#7180#0" expanded="true" />
+            <element signature="e#7211#7225#0" expanded="true" />
+            <element signature="e#7263#7277#0" expanded="true" />
+            <element signature="e#8498#8511#0" expanded="true" />
+            <element signature="e#8548#8561#0" expanded="true" />
+            <element signature="e#8599#8612#0" expanded="true" />
+            <element signature="e#8648#8661#0" expanded="true" />
+            <element signature="e#10027#10040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vary_height.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#1043#1057#0" expanded="true" />
+            <element signature="e#2160#2173#0" expanded="true" />
+            <element signature="e#2210#2223#0" expanded="true" />
+            <element signature="e#2261#2274#0" expanded="true" />
+            <element signature="e#2310#2323#0" expanded="true" />
+            <element signature="e#2958#2972#0" expanded="true" />
+            <element signature="e#3001#3015#0" expanded="true" />
+            <element signature="e#3053#3067#0" expanded="true" />
+            <element signature="e#4173#4186#0" expanded="true" />
+            <element signature="e#4223#4236#0" expanded="true" />
+            <element signature="e#4274#4287#0" expanded="true" />
+            <element signature="e#4323#4336#0" expanded="true" />
+            <element signature="e#4975#4989#0" expanded="true" />
+            <element signature="e#5028#5042#0" expanded="true" />
+            <element signature="e#5073#5087#0" expanded="true" />
+            <element signature="e#6301#6314#0" expanded="true" />
+            <element signature="e#6351#6364#0" expanded="true" />
+            <element signature="e#6402#6415#0" expanded="true" />
+            <element signature="e#6451#6464#0" expanded="true" />
+            <element signature="e#7165#7179#0" expanded="true" />
+            <element signature="e#7210#7224#0" expanded="true" />
+            <element signature="e#7262#7276#0" expanded="true" />
+            <element signature="e#8497#8510#0" expanded="true" />
+            <element signature="e#8547#8560#0" expanded="true" />
+            <element signature="e#8598#8611#0" expanded="true" />
+            <element signature="e#8647#8660#0" expanded="true" />
+            <element signature="e#10026#10039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_double.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.293333">
+          <caret line="193" column="62" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="62" />
+          <folding>
+            <element signature="e#892#906#0" expanded="true" />
+            <element signature="e#2009#2022#0" expanded="true" />
+            <element signature="e#2059#2072#0" expanded="true" />
+            <element signature="e#2110#2123#0" expanded="true" />
+            <element signature="e#2159#2172#0" expanded="true" />
+            <element signature="e#2875#2889#0" expanded="true" />
+            <element signature="e#2920#2934#0" expanded="true" />
+            <element signature="e#2974#2988#0" expanded="true" />
+            <element signature="e#3017#3031#0" expanded="true" />
+            <element signature="e#4250#4263#0" expanded="true" />
+            <element signature="e#4300#4313#0" expanded="true" />
+            <element signature="e#4351#4364#0" expanded="true" />
+            <element signature="e#4400#4413#0" expanded="true" />
+            <element signature="e#4993#5007#0" expanded="true" />
+            <element signature="e#5046#5060#0" expanded="true" />
+            <element signature="e#5091#5105#0" expanded="true" />
+            <element signature="e#6387#6400#0" expanded="true" />
+            <element signature="e#6437#6450#0" expanded="true" />
+            <element signature="e#6488#6501#0" expanded="true" />
+            <element signature="e#6537#6550#0" expanded="true" />
+            <element signature="e#7251#7265#0" expanded="true" />
+            <element signature="e#7296#7310#0" expanded="true" />
+            <element signature="e#7348#7362#0" expanded="true" />
+            <element signature="e#8583#8596#0" expanded="true" />
+            <element signature="e#8633#8646#0" expanded="true" />
+            <element signature="e#8684#8697#0" expanded="true" />
+            <element signature="e#8733#8746#0" expanded="true" />
+            <element signature="e#10112#10125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64533335">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="e#843#857#0" expanded="true" />
+            <element signature="e#886#900#0" expanded="true" />
+            <element signature="e#2003#2016#0" expanded="true" />
+            <element signature="e#2053#2066#0" expanded="true" />
+            <element signature="e#2104#2117#0" expanded="true" />
+            <element signature="e#2153#2166#0" expanded="true" />
+            <element signature="e#2799#2813#0" expanded="true" />
+            <element signature="e#2852#2866#0" expanded="true" />
+            <element signature="e#2897#2911#0" expanded="true" />
+            <element signature="e#4118#4131#0" expanded="true" />
+            <element signature="e#4168#4181#0" expanded="true" />
+            <element signature="e#4219#4232#0" expanded="true" />
+            <element signature="e#4268#4281#0" expanded="true" />
+            <element signature="e#4921#4935#0" expanded="true" />
+            <element signature="e#4974#4988#0" expanded="true" />
+            <element signature="e#5019#5033#0" expanded="true" />
+            <element signature="e#5071#5085#0" expanded="true" />
+            <element signature="e#6291#6304#0" expanded="true" />
+            <element signature="e#6341#6354#0" expanded="true" />
+            <element signature="e#6392#6405#0" expanded="true" />
+            <element signature="e#6441#6454#0" expanded="true" />
+            <element signature="e#7151#7165#0" expanded="true" />
+            <element signature="e#7196#7210#0" expanded="true" />
+            <element signature="e#7248#7262#0" expanded="true" />
+            <element signature="e#8469#8482#0" expanded="true" />
+            <element signature="e#8519#8532#0" expanded="true" />
+            <element signature="e#8570#8583#0" expanded="true" />
+            <element signature="e#8619#8632#0" expanded="true" />
+            <element signature="e#9998#10011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_vert.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37866667">
+          <caret line="194" column="64" selection-start-line="194" selection-start-column="64" selection-end-line="194" selection-end-column="64" />
+          <folding>
+            <element signature="e#843#857#0" expanded="true" />
+            <element signature="e#886#900#0" expanded="true" />
+            <element signature="e#2003#2016#0" expanded="true" />
+            <element signature="e#2053#2066#0" expanded="true" />
+            <element signature="e#2104#2117#0" expanded="true" />
+            <element signature="e#2153#2166#0" expanded="true" />
+            <element signature="e#2799#2813#0" expanded="true" />
+            <element signature="e#2852#2866#0" expanded="true" />
+            <element signature="e#2897#2911#0" expanded="true" />
+            <element signature="e#4118#4131#0" expanded="true" />
+            <element signature="e#4168#4181#0" expanded="true" />
+            <element signature="e#4219#4232#0" expanded="true" />
+            <element signature="e#4268#4281#0" expanded="true" />
+            <element signature="e#4977#4991#0" expanded="true" />
+            <element signature="e#5022#5036#0" expanded="true" />
+            <element signature="e#5076#5090#0" expanded="true" />
+            <element signature="e#5119#5133#0" expanded="true" />
+            <element signature="e#5171#5185#0" expanded="true" />
+            <element signature="e#6391#6404#0" expanded="true" />
+            <element signature="e#6441#6454#0" expanded="true" />
+            <element signature="e#6492#6505#0" expanded="true" />
+            <element signature="e#6541#6554#0" expanded="true" />
+            <element signature="e#7248#7262#0" expanded="true" />
+            <element signature="e#7293#7307#0" expanded="true" />
+            <element signature="e#7345#7359#0" expanded="true" />
+            <element signature="e#8582#8595#0" expanded="true" />
+            <element signature="e#8632#8645#0" expanded="true" />
+            <element signature="e#8683#8696#0" expanded="true" />
+            <element signature="e#8732#8745#0" expanded="true" />
+            <element signature="e#10134#10147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/ImageShadingFour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_three/ImageShadingThree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="115" column="22" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
+          <caret line="161" column="8" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_horz_vert.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_two/ImageShadingTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="8" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_multiple_vert_horz.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_one/ImageShadingOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33333334">
-          <caret line="136" column="56" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/images/shading_four/ImageShadingFour.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/proj/me/imagewindow/window/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.169184">
-          <caret line="138" column="61" selection-start-line="138" selection-start-column="61" selection-end-line="138" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.5862069">
+          <caret line="218" column="40" selection-start-line="218" selection-start-column="40" selection-end-line="218" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
           </folding>
         </state>
       </provider>

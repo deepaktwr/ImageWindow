@@ -947,7 +947,6 @@ public class ShadeFour {
 
         float avgWidth = (WIDTH_1 + WIDTH_2 + totalSum) / 3f;
 
-        WIDTH_1 = WIDTH_2 = totalSum = avgWidth;
 
         /*WIDTH_3 = totalSum * WIDTH_3 / sumWidth;
         WIDTH_4 = totalSum * WIDTH_4 / sumWidth;*/
@@ -963,6 +962,9 @@ public class ShadeFour {
             WIDTH_4 = MIN_WIDTH;
             WIDTH_3 = totalSum - MIN_WIDTH;
         }
+
+        WIDTH_1 = WIDTH_2 = /*totalSum = avgWidth*/ (int)WIDTH_3 + (int)WIDTH_4;
+
 
         float height3C = (height3 + height4) / 2f;
 
@@ -1078,7 +1080,6 @@ public class ShadeFour {
 
         float avgHeight = (HEIGHT_1 + HEIGHT_2 + totalSum) / 3f;
 
-        HEIGHT_1 = HEIGHT_2 = totalSum = avgHeight;
 
         /*HEIGHT_3 = totalSum * HEIGHT_3 / sumHeight;
         HEIGHT_4 = totalSum * HEIGHT_4 / sumHeight;*/
@@ -1095,6 +1096,7 @@ public class ShadeFour {
             HEIGHT_3 = totalSum - MIN_HIGHT;
         }
 
+        HEIGHT_1 = HEIGHT_2 = /*totalSum = avgHeight*/(int)HEIGHT_3 + (int)HEIGHT_4;
 
         float width3C = (width3 + width4) / 2f;
 
@@ -1211,7 +1213,6 @@ public class ShadeFour {
 
         float totalAvgWidth = (WIDTH_1 + totalWidth) / 2f;
 
-        WIDTH_1 = totalAvgWidth;
 
         float actualAvgWidth = (width3 + width4) / 2f;
         float actualWidthSum = width2 + actualAvgWidth;
@@ -1226,6 +1227,8 @@ public class ShadeFour {
             WIDTH_3 = WIDTH_4 = MIN_WIDTH;
             WIDTH_2 = totalAvgWidth - MIN_WIDTH;
         }
+
+        WIDTH_1 = /*totalAvgWidth*/ (int)WIDTH_2 + (int)WIDTH_3;
 
         HEIGHT_3 = height3 < MIN_HIGHT ? MIN_HIGHT : height3;
         HEIGHT_4 = height4 < MIN_HIGHT ? MIN_HIGHT : height4;
@@ -1333,7 +1336,7 @@ public class ShadeFour {
             }
         }
 
-        HEIGHT_2 = HEIGHT_3 + HEIGHT_4;
+        HEIGHT_2 = (int)HEIGHT_3 + (int)HEIGHT_4;
     }
 
     private static void setHorzVertHeightAndWidth(int width1, int width2, int width3, int width4,
@@ -1351,7 +1354,6 @@ public class ShadeFour {
 
         float totalAvgHeight = (HEIGHT_1 + totalHeight) / 2f;
 
-        HEIGHT_1 = totalAvgHeight;
 
         float actualAvgHeight = (height3 + height4) / 2f;
         float actualHeightSum = height2 + actualAvgHeight;
@@ -1366,6 +1368,8 @@ public class ShadeFour {
             HEIGHT_3 = HEIGHT_4 = MIN_HIGHT;
             HEIGHT_2 = totalAvgHeight - MIN_HIGHT;
         }
+
+        HEIGHT_1 = /*totalAvgHeight*/(int)HEIGHT_2 + (int)HEIGHT_3;
 
         WIDTH_3 = width3 < MIN_WIDTH ? MIN_WIDTH : width3;
         WIDTH_4 = width4 < MIN_WIDTH ? MIN_WIDTH : width4;
@@ -1473,7 +1477,7 @@ public class ShadeFour {
             }
         }
 
-        WIDTH_2 = WIDTH_3 + WIDTH_4;
+        WIDTH_2 = (int)WIDTH_3 + (int)WIDTH_4;
     }
 
     private static void setVertWidthAndHeight(int width1, int width2, int width3, int width4,
@@ -1608,7 +1612,7 @@ public class ShadeFour {
             }
         }
 
-        WIDTH_1 = WIDTH_2 + WIDTH_3 + WIDTH_4;
+        WIDTH_1 = (int)WIDTH_2 + (int)WIDTH_3 + (int)WIDTH_4;
     }
 
     private static void setHorzHeightAndWidth(int width1, int width2, int width3, int width4,
@@ -1742,7 +1746,7 @@ public class ShadeFour {
             }
         }
 
-        HEIGHT_1 = HEIGHT_2 + HEIGHT_3 + HEIGHT_4;
+        HEIGHT_1 = (int)HEIGHT_2 + (int)HEIGHT_3 + (int)HEIGHT_4;
     }
 
     private static void setWidthAndHeight1234(List<ImageOrder> imageOrderList, int width1, int width2, int width3, int width4,

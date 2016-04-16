@@ -29,7 +29,7 @@ public class ShadeTwo {
 
         List<ImageOrder> imageOrderList = new ArrayList<>();
 
-        float requiredMinWidth = Utils.MIN_WIDTH + Utils.MIN_WIDTH / 8f;
+        float requiredMinWidth = Utils.MIN_WIDTH + Utils.MIN_WIDTH / 1.5f;
 
         if(amountW1 >= amountH1 && amountW1 >= amountH2 && amountW1 >= amountW2 && (width1 >= requiredMinWidth || width2 >= requiredMinWidth)){
             imageOrderList.add(ImageOrder.FIRST);
@@ -108,7 +108,7 @@ public class ShadeTwo {
     private static void calculateVert(BeanShade2 beanShade2, int height1, int height2){
         //adjust add button in layout through width
         float maxImageWidthForAdd = WIDTH_1 - WIDTH_1 * Utils.MIN_ADD_RATIO;
-        if(WIDTH_2 >= WIDTH_1 * 0.9f){
+        if(!Utils.shouldShowAddInLayout() || WIDTH_2 >= WIDTH_1 * 0.9f){
             WIDTH_2 = WIDTH_1;
             beanShade2.setAddInLayout(false);
         }else if(WIDTH_2 > maxImageWidthForAdd && maxImageWidthForAdd >= Utils.MIN_WIDTH){
@@ -141,7 +141,7 @@ public class ShadeTwo {
     private static void calculateHorz(BeanShade2 beanShade2, int width1, int width2){
         //adjust add button in layout through height
         float maxImageHeightForAdd = HEIGHT_1 - HEIGHT_1 * Utils.MIN_ADD_RATIO;
-        if(HEIGHT_2 >= HEIGHT_1 * 0.9f){
+        if(!Utils.shouldShowAddInLayout() || HEIGHT_2 >= HEIGHT_1 * 0.9f){
             HEIGHT_2 = HEIGHT_1;
             beanShade2.setAddInLayout(false);
         }else if(HEIGHT_2 > maxImageHeightForAdd && maxImageHeightForAdd >= Utils.MIN_HIGHT){

@@ -46,8 +46,10 @@ public class Utils {
     }
 
 
-
-
+    //for add in layout
+    public static boolean shouldShowAddInLayout(){
+        return false;
+    }
     //for comments
     public static boolean shouldShowComments(){
         return false;
@@ -218,8 +220,8 @@ public class Utils {
     public static float MAX_WIDTH = 700;
     public static float MAX_HEIGHT = 900;
 
-    public static final float MIN_RATIO = 0.3f;
-    public static final float MAX_RATIO = 0.7f;
+    /*public static final float MIN_RATIO = 0.3f;
+    public static final float MAX_RATIO = 0.7f;*/
 
     public static final float MIN_ADD_RATIO = 0.25f;
 

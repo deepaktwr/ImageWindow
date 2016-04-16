@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/p_1_5"
+			android:layout_marginEnd="@dimen/p_1_5"
             android:background="@{shadeTwo.firstImageBgColor}">
 
             <ImageView
@@ -36,7 +37,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@id/view_double_image1"
                 android:layout_alignLeft="@id/view_double_image1"
+			android:layout_alignStart="@id/view_double_image1"
                 android:layout_alignRight="@id/view_double_image1"
+			android:layout_alignEnd="@id/view_double_image1"
                 android:background="@{shadeTwo.firstCommentBgColor}"
                 android:paddingBottom="@dimen/d_10"
                 android:paddingLeft="@dimen/d_10"
@@ -54,7 +57,9 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/left_rl_view"
             android:layout_marginLeft="@dimen/p_1_5"
+			android:layout_marginStart="@dimen/p_1_5"
             android:layout_toRightOf="@id/left_rl_view"
+			android:layout_toEndOf="@id/left_rl_view"
             android:background="@{shadeTwo.secondImageBgColor}">
 
             <ImageView
@@ -71,7 +76,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@id/view_double_image2"
                 android:layout_alignLeft="@id/view_double_image2"
+			android:layout_alignStart="@id/view_double_image2"
                 android:layout_alignRight="@id/view_double_image2"
+			android:layout_alignEnd="@id/view_double_image2"
                 android:background="@{shadeTwo.secondCommentBgColor}"
                 android:paddingBottom="@dimen/d_10"
                 android:paddingLeft="@dimen/d_10"
@@ -89,10 +96,13 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/left_rl_view"
             android:layout_alignRight="@id/right_rl_view"
+			android:layout_alignEnd="@id/right_rl_view"
             android:layout_below="@id/right_rl_view"
             android:layout_marginLeft="@dimen/p_1_5"
+			android:layout_marginStart="@dimen/p_1_5"
             android:layout_marginTop="@dimen/d_3"
             android:layout_toRightOf="@id/left_rl_view"
+			android:layout_toEndOf="@id/left_rl_view"
             android:background="@{shadeTwo.addBgColor, default = @color/add_counter_bg}"
             android:gravity="center"
             android:tag="add"
@@ -103,18 +113,27 @@
             android:visibility="@{shadeTwo.addVisibility ? View.VISIBLE : View.GONE}"
             android:textSize="@{shadeTwo.addAsCounter ? @dimen/d_30 : @dimen/d_50}"/>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/right_rl_view"
+            android:layout_alignLeft="@id/right_rl_view"
+			android:layout_alignStart="@id/right_rl_view"
+            android:layout_alignRight="@id/right_rl_view"
+			android:layout_alignEnd="@id/right_rl_view"
+            android:layout_alignTop="@id/right_rl_view"
+            android:background="@color/counter_bg"
+            android:layout_height="wrap_content"
+            android:visibility="@{shadeTwo.counterVisibility ? View.VISIBLE : View.GONE}"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/right_rl_view"
-            android:layout_alignLeft="@id/right_rl_view"
-            android:layout_alignRight="@id/right_rl_view"
-            android:layout_alignTop="@id/right_rl_view"
-            android:background="@color/counter_bg"
             android:gravity="center"
+            android:layout_gravity="center"
             android:textColor="@color/white"
             android:textSize="@dimen/s_30"
             android:text="@{shadeTwo.counterText}"
-            android:visibility="@{shadeTwo.counterVisibility ? View.VISIBLE : View.GONE}" />
+             />
+        </LinearLayout>
     </RelativeLayout>
 </layout>

@@ -29,7 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/view_single_image"
             android:layout_alignLeft="@id/view_single_image"
+			android:layout_alignStart="@id/view_single_image"
             android:layout_alignRight="@id/view_single_image"
+			android:layout_alignEnd="@id/view_single_image"
             android:background="@{shadeOne.commentTextBackgroundColor}"
             android:paddingBottom="@dimen/d_10"
             android:paddingLeft="@dimen/d_10"
@@ -41,18 +43,27 @@
             android:visibility="@{shadeOne.shouldCommentVisible ? View.VISIBLE : View.INVISIBLE}"
             android:textColor="@color/white" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignBottom="@id/view_single_image"
             android:layout_alignLeft="@id/view_single_image"
+			android:layout_alignStart="@id/view_single_image"
             android:layout_alignRight="@id/view_single_image"
+			android:layout_alignEnd="@id/view_single_image"
             android:layout_alignTop="@id/view_single_image"
             android:background="@color/counter_bg"
             android:gravity="center"
+            android:visibility="@{shadeOne.imageCounterVisibility ? View.VISIBLE : View.GONE}"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
             android:textColor="@color/white"
             android:textSize="@dimen/s_25"
-            android:text="@{shadeOne.imageCounterText}"
-            android:visibility="@{shadeOne.imageCounterVisibility ? View.VISIBLE : View.GONE}" />
+            android:text="@{shadeOne.imageCounterText}"/>
+        </LinearLayout>
     </RelativeLayout>
 </layout>

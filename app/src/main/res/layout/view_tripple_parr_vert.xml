@@ -31,14 +31,15 @@
                 android:onClick="@{clickHandler.onImageShadeClick}"
                 android:scaleType="@{shadeThree.firstImageScaleType, default = center}" />
 
-            android:textColor="@android:color/background_light"
             <TextView
                 android:id="@+id/view_triple_text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/view_triple_image1"
                 android:layout_alignLeft="@+id/view_triple_image1"
+			android:layout_alignStart="@+id/view_triple_image1"
                 android:layout_alignRight="@+id/view_triple_image1"
+			android:layout_alignEnd="@+id/view_triple_image1"
                 android:background="@{shadeThree.firstCommentBgColor}"
                 android:paddingBottom="@dimen/d_10"
                 android:paddingLeft="@dimen/d_10"
@@ -75,7 +76,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@id/view_triple_image2"
                 android:layout_alignLeft="@id/view_triple_image2"
+			android:layout_alignStart="@id/view_triple_image2"
                 android:layout_alignRight="@id/view_triple_image2"
+			android:layout_alignEnd="@id/view_triple_image2"
                 android:background="@{shadeThree.secondCommentBgColor}"
                 android:paddingBottom="@dimen/d_10"
                 android:paddingLeft="@dimen/d_10"
@@ -111,7 +114,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@id/view_triple_image3"
                 android:layout_alignLeft="@id/view_triple_image3"
+			android:layout_alignStart="@id/view_triple_image3"
                 android:layout_alignRight="@id/view_triple_image3"
+			android:layout_alignEnd="@id/view_triple_image3"
                 android:background="@{shadeThree.thirdCommentBgColor}"
                 android:paddingBottom="@dimen/d_10"
                 android:paddingLeft="@dimen/d_10"
@@ -123,20 +128,29 @@
                 android:textColor="@android:color/background_light"
                 android:visibility="@{shadeThree.thirdCommentVisibility ? View.VISIBLE : View.GONE}"/>
         </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/bottom_rl_view"
+            android:layout_alignLeft="@id/bottom_rl_view"
+			android:layout_alignStart="@id/bottom_rl_view"
+            android:layout_alignRight="@id/bottom_rl_view"
+			android:layout_alignEnd="@id/bottom_rl_view"
+            android:layout_alignTop="@id/bottom_rl_view"
+            android:background="@color/counter_bg"
+            android:gravity="center"
+            android:visibility="@{shadeThree.counterVisibility ? View.VISIBLE : View.GONE}"
+            android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/image_triple_counter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/bottom_rl_view"
-            android:layout_alignLeft="@id/bottom_rl_view"
-            android:layout_alignRight="@id/bottom_rl_view"
-            android:layout_alignTop="@id/bottom_rl_view"
-            android:background="@color/counter_bg"
             android:gravity="center"
+            android:layout_gravity="center"
             android:textColor="@color/white"
             android:textSize="@dimen/s_30"
             android:text="@{shadeThree.counterText}"
-            android:visibility="@{shadeThree.counterVisibility ? View.VISIBLE : View.GONE}" />
+             />
+        </LinearLayout>
     </RelativeLayout>
 </layout>
