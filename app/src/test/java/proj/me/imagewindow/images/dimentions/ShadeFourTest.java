@@ -1,8 +1,5 @@
 package proj.me.imagewindow.images.dimentions;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -54,7 +51,7 @@ public class ShadeFourTest {
 
         DimentionsModel[] dimentionsModels = new DimentionsModel[]{
                 //layout type = vert
-                /*new DimentionsModel(new int[]{
+                new DimentionsModel(new int[]{
                         parallelMinWidth + 1, 500,
                         50, 200,
                         40, 20,
@@ -80,11 +77,11 @@ public class ShadeFourTest {
                         parallelMinWidth - 1, 600,
                         600, 600,
                         (int)Utils.MAX_WIDTH - 50, 700
-                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.VERT),*/
+                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.VERT_HORZ),
 
 
                 //layout type = horz
-                /*new DimentionsModel(new int[]{
+                new DimentionsModel(new int[]{
                         300, parallelMinHeight + 1,
                         20, 60,
                         60, 60,
@@ -117,10 +114,10 @@ public class ShadeFourTest {
                         200, 60,
                         300, 4000,
                         500, 500
-                }, new ImageOrder[]{ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.FOURTH}, LayoutType.HORZ),*/
+                }, new ImageOrder[]{ImageOrder.THIRD, ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.HORZ_VERT),
 
                 //view double
-                /*new DimentionsModel(new int[]{
+                new DimentionsModel(new int[]{
                         2000, 500,
                         2000, 60,
                         300, 1000,
@@ -209,10 +206,10 @@ public class ShadeFourTest {
                         300, 200,
                         parallelMinWidth + 200, 50,
                         800, 60,
-                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.VERT_DOUBLE),*/
+                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.VERT_DOUBLE),
 
                 //horz double
-                /*new DimentionsModel(new int[]{
+                new DimentionsModel(new int[]{
                         500, 3500,
                         300, 2000,
                         parallelMinWidth + 200, 50,
@@ -294,10 +291,10 @@ public class ShadeFourTest {
                         50, 60,
                         50, 780,
                         30, 800,
-                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.HORZ_DOUBLE),*/
+                }, new ImageOrder[]{ImageOrder.FOURTH, ImageOrder.THIRD, ImageOrder.FIRST, ImageOrder.SECOND}, LayoutType.HORZ_DOUBLE),
 
                 //VERT_HORZ
-                /*new DimentionsModel(new int[]{
+                new DimentionsModel(new int[]{
                         5000, 800,
                         200, 2000,
                         500, 600,
@@ -338,10 +335,10 @@ public class ShadeFourTest {
                         (int)Utils.MAX_WIDTH, 10,
                         10, 10,
                         10, (int)Utils.MAX_HEIGHT,
-                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.THIRD}, LayoutType.VERT_HORZ),*/
+                }, new ImageOrder[]{ImageOrder.SECOND, ImageOrder.FOURTH, ImageOrder.FIRST, ImageOrder.THIRD}, LayoutType.VERT_HORZ),
 
                 //HORZ_VERT
-                /*new DimentionsModel(new int[]{
+                new DimentionsModel(new int[]{
                         50, 8000,
                         2000, 2,
                         500, 600,
@@ -360,10 +357,10 @@ public class ShadeFourTest {
                         200, 200,
                         500, 600,
                         600, 100,
-                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.FOURTH, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.HORZ_VERT),*/
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.FOURTH, ImageOrder.SECOND, ImageOrder.THIRD}, LayoutType.HORZ_VERT),
 
                 //VARY_WIDTH
-                /*new DimentionsModel(new int[]{
+                new DimentionsModel(new int[]{
                         50, 400,
                         200,350,
                         500, 200,
@@ -382,7 +379,7 @@ public class ShadeFourTest {
                         500,400,
                         500, 400,
                         500, 400,
-                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),*/
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),
 
                 new DimentionsModel(new int[]{
                         350, 250,
@@ -390,6 +387,20 @@ public class ShadeFourTest {
                         500, 200,
                         50, 400,
                 }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.THIRD, ImageOrder.SECOND, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),
+
+                new DimentionsModel(new int[]{
+                        35, 25,
+                        50,50,
+                        50, 20,
+                        50, 40,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_WIDTH),
+                new DimentionsModel(new int[]{
+                        35, 25,
+                        50,500,
+                        50, 20,
+                        50, 400,
+                }, new ImageOrder[]{ImageOrder.FIRST, ImageOrder.SECOND, ImageOrder.THIRD, ImageOrder.FOURTH}, LayoutType.IDENTICAL_VARY_HEIGHT),
+
 
         };
         return Arrays.asList(dimentionsModels);

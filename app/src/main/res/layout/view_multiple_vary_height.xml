@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--can have vary in height   or   identical-->
+    <!--these totally depends on calculations-->
     <data>
-        <import type="android.view.View" />
+        <import type="android.view.View"/>
         <variable
-            name="shadeFour"
-            type="proj.me.imagewindow.images.shading_four.BindingShadeFour" />
+            name="shadeFour"            type="proj.me.imagewindow.images.shading_four.BindingShadeFour" />
 
         <variable
             name="clickHandler"
             type="proj.me.imagewindow.images.ImageClickHandler" />
     </data>
-
     <!-- has varying height according to the image-->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,10 +18,11 @@
         android:background="@{shadeFour.dividerColor}">
 
         <RelativeLayout
-            android:id="@+id/top_rl_view"
+            android:id="@+id/left_top_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/p_1_5"
+            android:layout_marginRight="@dimen/p_1_5"
             android:background="@{shadeFour.firstImageBgColor}">
 
             <ImageView
@@ -53,11 +54,10 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/left_rl_view"
+            android:id="@+id/left_bottom_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/top_rl_view"
-            android:layout_below="@+id/top_rl_view"
+            android:layout_below="@+id/left_top_rl_view"
             android:layout_marginRight="@dimen/p_1_5"
             android:layout_marginTop="@dimen/p_1_5"
             android:background="@{shadeFour.secondImageBgColor}">
@@ -69,7 +69,7 @@
                 android:layout_centerInParent="true"
                 android:tag="img2"
                 android:onClick="@{clickHandler.onImageShadeClick}"
-                android:scaleType="@{shadeFour.secondImageScaleType, default = center}"/>
+                android:scaleType="@{shadeFour.secondImageScaleType, default = center}" />
 
             <TextView
                 android:id="@+id/view_multiple_text2"
@@ -94,12 +94,10 @@
             android:id="@+id/right_top_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/top_rl_view"
-            android:layout_marginLeft="@dimen/p_1_5"
+            android:layout_alignTop="@+id/left_top_rl_view"
             android:layout_marginBottom="@dimen/p_1_5"
-            android:layout_marginTop="@dimen/p_1_5"
-            android:layout_toRightOf="@+id/left_rl_view"
-            android:layout_alignRight="@id/top_rl_view"
+            android:layout_marginLeft="@dimen/p_1_5"
+            android:layout_toRightOf="@+id/left_top_rl_view"
             android:background="@{shadeFour.thirdCommentBgColor}">
 
             <ImageView
@@ -134,11 +132,11 @@
             android:id="@+id/right_bottom_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/top_rl_view"
+            android:layout_alignBottom="@+id/left_bottom_rl_view"
             android:layout_below="@+id/right_top_rl_view"
             android:layout_marginLeft="@dimen/p_1_5"
             android:layout_marginTop="@dimen/p_1_5"
-            android:layout_toRightOf="@+id/left_rl_view"
+            android:layout_toRightOf="@+id/left_bottom_rl_view"
             android:background="@{shadeFour.fourthImageBgColor}">
 
             <ImageView
@@ -148,7 +146,7 @@
                 android:layout_centerInParent="true"
                 android:tag="img4"
                 android:onClick="@{clickHandler.onImageShadeClick}"
-                android:scaleType="@{shadeFour.fourthImageScaleType, default = center}"/>
+                android:scaleType="@{shadeFour.fourthImageScaleType, default = center}" />
 
             <TextView
                 android:id="@+id/view_multiple_text4"

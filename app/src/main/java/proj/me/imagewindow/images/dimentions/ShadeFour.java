@@ -1852,7 +1852,7 @@ public class ShadeFour {
         WIDTH_3 = width3 < MIN_WIDTH ? MIN_WIDTH : width3;
         WIDTH_4 = width4 < MIN_WIDTH ? MIN_WIDTH : width4;
 
-        float avgSum = (WIDTH_1 + WIDTH_2 + WIDTH_1 + WIDTH_2) / 2f;
+        float avgSum = (WIDTH_1 + WIDTH_2 + WIDTH_3 + WIDTH_4) / 2f;
 
         if(avgSum > Utils.MAX_WIDTH) avgSum = Utils.MAX_WIDTH;
 
@@ -1862,10 +1862,11 @@ public class ShadeFour {
 
         if(WIDTH_1 < MIN_WIDTH){
             WIDTH_1 = MIN_WIDTH;
-            if(MIN_WIDTH + WIDTH_2 > Utils.MAX_WIDTH) WIDTH_2 = avgSum - MIN_WIDTH;
+            //we can't do that because w1 + w2 = w3 + w4 and this condition will break that, hence we can do this in the height instead
+            /*if(MIN_WIDTH + WIDTH_2 > Utils.MAX_WIDTH) */WIDTH_2 = avgSum - MIN_WIDTH;
         } else if(WIDTH_2 < MIN_WIDTH){
             WIDTH_2  = MIN_WIDTH;
-            if(MIN_WIDTH + WIDTH_1 > Utils.MAX_WIDTH) WIDTH_1 = avgSum - MIN_WIDTH;
+            /*if(MIN_WIDTH + WIDTH_1 > Utils.MAX_WIDTH) */WIDTH_1 = avgSum - MIN_WIDTH;
         }
 
         float ratio2 = width3 / (width3 + width4);
@@ -1874,10 +1875,10 @@ public class ShadeFour {
 
         if(WIDTH_3 < MIN_WIDTH){
             WIDTH_3 = MIN_WIDTH;
-            if(MIN_WIDTH + WIDTH_4 > Utils.MAX_WIDTH) WIDTH_4 = avgSum - MIN_WIDTH;
+            /*if(MIN_WIDTH + WIDTH_4 > Utils.MAX_WIDTH) */WIDTH_4 = avgSum - MIN_WIDTH;
         } else if(WIDTH_4 < MIN_WIDTH){
             WIDTH_4  = MIN_WIDTH;
-            if(MIN_WIDTH + WIDTH_3 > Utils.MAX_WIDTH) WIDTH_3 = avgSum - MIN_WIDTH;
+            /*if(MIN_WIDTH + WIDTH_3 > Utils.MAX_WIDTH) */WIDTH_3 = avgSum - MIN_WIDTH;
         }
     }
     private static void calculateWidthAndHeightVaryHeight(){
@@ -1943,10 +1944,10 @@ public class ShadeFour {
 
         if(HEIGHT_1 < MIN_HIGHT){
             HEIGHT_1 = MIN_HIGHT;
-            if(MIN_HIGHT + HEIGHT_2 > Utils.MAX_HEIGHT) HEIGHT_2 = avgHeight - MIN_HIGHT;
+            /*if(MIN_HIGHT + HEIGHT_2 > Utils.MAX_HEIGHT) */HEIGHT_2 = avgHeight - MIN_HIGHT;
         } else if(HEIGHT_2 < MIN_HIGHT){
             HEIGHT_2  = MIN_HIGHT;
-            if(MIN_HIGHT + HEIGHT_1 > Utils.MAX_HEIGHT) HEIGHT_1 = avgHeight - MIN_HIGHT;
+            /*if(MIN_HIGHT + HEIGHT_1 > Utils.MAX_HEIGHT) */HEIGHT_1 = avgHeight - MIN_HIGHT;
         }
 
         float ratio2 = height3 / (height3 + height4);
@@ -1955,10 +1956,10 @@ public class ShadeFour {
 
         if(HEIGHT_3 < MIN_HIGHT){
             HEIGHT_3 = MIN_HIGHT;
-            if(MIN_HIGHT + HEIGHT_4 > Utils.MAX_HEIGHT) HEIGHT_4 = avgHeight - MIN_HIGHT;
+            /*if(MIN_HIGHT + HEIGHT_4 > Utils.MAX_HEIGHT) */HEIGHT_4 = avgHeight - MIN_HIGHT;
         } else if(HEIGHT_4 < MIN_HIGHT){
             HEIGHT_4  = MIN_HIGHT;
-            if(MIN_HIGHT + HEIGHT_3 > Utils.MAX_HEIGHT) HEIGHT_3 = avgHeight - MIN_HIGHT;
+            /*if(MIN_HIGHT + HEIGHT_3 > Utils.MAX_HEIGHT) */HEIGHT_3 = avgHeight - MIN_HIGHT;
         }
     }
 }

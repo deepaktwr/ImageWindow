@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--can have vary in width then vary in height   or    can have vary in height then vary in width   or   identical-->
+    <!--can have vary in width   or   identical-->
     <!--these totally depends on calculations-->
     <data>
         <import type="android.view.View"/>
@@ -55,13 +55,14 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/left_bottom_rl_view"
+            android:id="@+id/right_top_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/left_top_rl_view"
-            android:layout_marginRight="@dimen/p_1_5"
-            android:layout_marginTop="@dimen/p_1_5"
-            android:background="@{shadeFour.secondImageBgColor}">
+            android:layout_alignTop="@+id/left_top_rl_view"
+            android:layout_marginBottom="@dimen/p_1_5"
+            android:layout_marginLeft="@dimen/p_1_5"
+            android:layout_toRightOf="@+id/left_top_rl_view"
+            android:background="@{shadeFour.thirdCommentBgColor}">
 
             <ImageView
                 android:id="@+id/view_multiple_image2"
@@ -92,14 +93,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/right_top_rl_view"
+            android:id="@+id/left_bottom_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/left_top_rl_view"
-            android:layout_marginBottom="@dimen/p_1_5"
-            android:layout_marginLeft="@dimen/p_1_5"
-            android:layout_toRightOf="@+id/left_top_rl_view"
-            android:background="@{shadeFour.thirdCommentBgColor}">
+            android:layout_below="@+id/left_top_rl_view"
+            android:layout_marginRight="@dimen/p_1_5"
+            android:layout_marginTop="@dimen/p_1_5"
+            android:background="@{shadeFour.secondImageBgColor}">
 
             <ImageView
                 android:id="@+id/view_multiple_image3"
@@ -127,7 +127,9 @@
                 android:visibility="@{shadeFour.thirdCommentVisibility ? View.VISIBLE : View.GONE}"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/background_light" />
+
         </RelativeLayout>
+
 
         <RelativeLayout
             android:id="@+id/right_bottom_rl_view"

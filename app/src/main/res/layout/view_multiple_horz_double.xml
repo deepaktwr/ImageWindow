@@ -19,7 +19,7 @@
         android:background="@{shadeFour.dividerColor}">
 
         <RelativeLayout
-            android:id="@+id/left_rl_view"
+            android:id="@+id/left_first_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/p_1_5"
@@ -54,13 +54,14 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/right_top_rl_view"
+            android:id="@+id/left_second_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/left_rl_view"
-            android:layout_marginBottom="@dimen/p_1_5"
+            android:layout_alignTop="@id/left_first_rl_view"
+            android:layout_alignBottom="@id/left_first_rl_view"
             android:layout_marginLeft="@dimen/p_1_5"
-            android:layout_toRightOf="@+id/left_rl_view"
+            android:layout_marginRight="@dimen/p_1_5"
+            android:layout_toRightOf="@id/left_first_rl_view"
             android:background="@{shadeFour.secondImageBgColor}">
 
             <ImageView
@@ -92,14 +93,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/right_middle_rl_view"
+            android:id="@+id/right_top_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/right_top_rl_view"
             android:layout_marginBottom="@dimen/p_1_5"
             android:layout_marginLeft="@dimen/p_1_5"
-            android:layout_marginTop="@dimen/p_1_5"
-            android:layout_toRightOf="@+id/left_rl_view"
+            android:layout_toRightOf="@id/left_second_rl_view"
+            android:layout_alignTop="@id/left_second_rl_view"
             android:background="@{shadeFour.thirdCommentBgColor}">
 
             <ImageView
@@ -134,11 +134,11 @@
             android:id="@+id/right_bottom_rl_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/left_rl_view"
-            android:layout_below="@+id/right_middle_rl_view"
+            android:layout_alignBottom="@id/left_second_rl_view"
+            android:layout_below="@+id/right_top_rl_view"
             android:layout_marginLeft="@dimen/p_1_5"
             android:layout_marginTop="@dimen/p_1_5"
-            android:layout_toRightOf="@+id/left_rl_view"
+            android:layout_toRightOf="@id/left_second_rl_view"
             android:background="@{shadeFour.fourthImageBgColor}">
 
             <ImageView
@@ -173,10 +173,10 @@
             android:id="@+id/image_four_counter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/right_bottom_rl_view"
-            android:layout_alignLeft="@+id/right_bottom_rl_view"
-            android:layout_alignRight="@+id/right_bottom_rl_view"
-            android:layout_alignTop="@+id/right_bottom_rl_view"
+            android:layout_alignBottom="@id/right_bottom_rl_view"
+            android:layout_alignLeft="@id/right_bottom_rl_view"
+            android:layout_alignRight="@id/right_bottom_rl_view"
+            android:layout_alignTop="@id/right_bottom_rl_view"
             android:background="@color/counter_bg"
             android:gravity="center"
             android:textColor="@color/white"

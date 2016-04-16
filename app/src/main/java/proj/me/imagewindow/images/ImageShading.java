@@ -123,7 +123,7 @@ public final class ImageShading {
                     imageShadingThree.updateTripleUi(images, textImages, imageUrls, bitmapImageUrls);
                     break;
                 case 4:
-                    ImageShadingFour imageShadingFour = new ImageShadingFour(context, layoutCallback, minWidth, minHeight, maxWidth, maxHeight, totalImages);
+                    ImageShadingFour imageShadingFour = new ImageShadingFour(context, layoutCallback, totalImages);
                     imageShadingFour.updateOctalUi(images, textImages, imageUrls, bitmapImageUrls);
                     break;
             }
