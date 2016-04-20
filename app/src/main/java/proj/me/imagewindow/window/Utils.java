@@ -225,4 +225,6 @@ public class Utils {
 
     public static final float MIN_ADD_RATIO = 0.25f;
 
+    public static final boolean HAS_FIXED_DIMENSIONS = true;
+
 }

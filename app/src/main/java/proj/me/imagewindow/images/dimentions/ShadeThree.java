@@ -56,13 +56,25 @@ public class ShadeThree {
             imageOrderList.add(ImageOrder.THIRD);
 
             //height calculation
-            float avgHeight = (height1 + height2 + height3) /3f;
-            HEIGHT_1 = HEIGHT_2 = HEIGHT_3 = avgHeight > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : avgHeight;
+            float avgHeight = (height1 + height2 + height3) / 3f;
+            HEIGHT_1 = HEIGHT_2 = HEIGHT_3 = Utils.HAS_FIXED_DIMENSIONS  || avgHeight > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : avgHeight;
+
+
+            //changing actual dimentions
+            if(Utils.HAS_FIXED_DIMENSIONS){
+                width1 += Utils.MAX_WIDTH / 3f  + 2;
+                width2 += Utils.MAX_WIDTH / 3f  + 2;
+                width3 += Utils.MAX_WIDTH / 3f  + 2;
+
+                widthSum = width1 + width2 + width3;
+            }
 
             //width calculation
             WIDTH_1 = width1;
             WIDTH_2 = width2;
             WIDTH_3 = width3;
+
+
 
             if(widthSum > Utils.MAX_WIDTH){
                 float reducePercent = ((widthSum - Utils.MAX_WIDTH) / widthSum) * 100f;
@@ -164,7 +176,17 @@ public class ShadeThree {
 
             //width calculation
             float avgWidth = (width1 + width2 + width3) / 3f;
-            WIDTH_1 = WIDTH_2 = WIDTH_3 = avgWidth > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : avgWidth;
+            WIDTH_1 = WIDTH_2 = WIDTH_3 = Utils.HAS_FIXED_DIMENSIONS || avgWidth > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : avgWidth;
+
+
+            //changing actual dimentions
+            if(Utils.HAS_FIXED_DIMENSIONS){
+                height1 += Utils.MAX_HEIGHT / 3f  + 2;
+                height2 += Utils.MAX_HEIGHT / 3f  + 2;
+                height3 += Utils.MAX_HEIGHT / 3f  + 2;
+
+                heightSum = height1 + height2 + height3;
+            }
 
             //height calculation
             HEIGHT_1 = height1;
@@ -389,8 +411,8 @@ public class ShadeThree {
         //lower images width
         float tempWidth1 = WIDTH_1;
         float sumTwoWidth = WIDTH_2 + WIDTH_3;
-        sumTwoWidth = sumTwoWidth > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : sumTwoWidth;
-        WIDTH_1 = WIDTH_1 > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : WIDTH_1;
+        sumTwoWidth = Utils.HAS_FIXED_DIMENSIONS || sumTwoWidth > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : sumTwoWidth;
+        WIDTH_1 = Utils.HAS_FIXED_DIMENSIONS || WIDTH_1 > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : WIDTH_1;
 
         float avgWidth = (sumTwoWidth + WIDTH_1) / 2f;
 
@@ -417,7 +439,7 @@ public class ShadeThree {
         float avgTwoHeight = (HEIGHT_2 + HEIGHT_3) / 2f;
         float sumHeight = HEIGHT_1 + avgTwoHeight;
 
-        sumHeight  = sumHeight > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : sumHeight;
+        sumHeight  = Utils.HAS_FIXED_DIMENSIONS || sumHeight > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : sumHeight;
         float tempHeight = HEIGHT_1;
         HEIGHT_1 = sumHeight * HEIGHT_1 / (HEIGHT_1 + avgTwoHeight);
         avgTwoHeight = sumHeight * avgTwoHeight / (tempHeight + avgTwoHeight);
@@ -436,8 +458,8 @@ public class ShadeThree {
     private static void calculateWidthAndHeightHorz(){
         //right images height
         float sumTwoHeight = HEIGHT_2 + HEIGHT_3;
-        sumTwoHeight = sumTwoHeight > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : sumTwoHeight;
-        HEIGHT_1 = HEIGHT_1 > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : HEIGHT_1;
+        sumTwoHeight = Utils.HAS_FIXED_DIMENSIONS || sumTwoHeight > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : sumTwoHeight;
+        HEIGHT_1 = Utils.HAS_FIXED_DIMENSIONS || HEIGHT_1 > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : HEIGHT_1;
 
         float avgHeight = (sumTwoHeight + HEIGHT_1) / 2f;
 
@@ -461,7 +483,7 @@ public class ShadeThree {
         float avgTwoWidth = (WIDTH_2 + WIDTH_3) / 2f;
         float sumWidth = WIDTH_1 + avgTwoWidth;
 
-        sumWidth  = sumWidth > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : sumWidth;
+        sumWidth  = Utils.HAS_FIXED_DIMENSIONS || sumWidth > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : sumWidth;
         float tempWidth = WIDTH_1;
         WIDTH_1 = sumWidth * WIDTH_1 / (WIDTH_1 + avgTwoWidth);
         avgTwoWidth = sumWidth * avgTwoWidth / (tempWidth + avgTwoWidth);
