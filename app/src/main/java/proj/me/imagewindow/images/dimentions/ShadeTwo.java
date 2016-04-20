@@ -109,14 +109,16 @@ public class ShadeTwo {
         //adjust add button in layout through width
         float maxImageWidthForAdd = WIDTH_1 - WIDTH_1 * Utils.MIN_ADD_RATIO;
         if(!Utils.shouldShowAddInLayout() || WIDTH_2 >= WIDTH_1 * 0.9f){
+            if(Utils.HAS_FIXED_DIMENSIONS) WIDTH_1 = Utils.MAX_WIDTH;
             WIDTH_2 = WIDTH_1;
             beanShade2.setAddInLayout(false);
         }else if(WIDTH_2 > maxImageWidthForAdd && maxImageWidthForAdd >= Utils.MIN_WIDTH){
+            if(Utils.HAS_FIXED_DIMENSIONS) WIDTH_1 = Utils.MAX_WIDTH;
             WIDTH_2 = maxImageWidthForAdd;
             beanShade2.setAddInLayout(true);
         }else if(WIDTH_2 > maxImageWidthForAdd){
             float width1Increase = Utils.MIN_WIDTH - maxImageWidthForAdd;
-            WIDTH_1 = WIDTH_1 + width1Increase > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : WIDTH_1 + width1Increase;
+            WIDTH_1 = Utils.HAS_FIXED_DIMENSIONS || WIDTH_1 + width1Increase > Utils.MAX_WIDTH ? Utils.MAX_WIDTH : WIDTH_1 + width1Increase;
             WIDTH_2 = Utils.MIN_WIDTH;
             beanShade2.setAddInLayout(true);
         }else beanShade2.setAddInLayout(true);
@@ -124,7 +126,7 @@ public class ShadeTwo {
 
         //post height calculation
         float sumHeight = HEIGHT_1 + HEIGHT_2;
-        if(sumHeight > Utils.MAX_HEIGHT){
+        if(sumHeight > Utils.MAX_HEIGHT || Utils.HAS_FIXED_DIMENSIONS){
             float ratio = (float)height1 / (height1 + height2);
             HEIGHT_1 = Utils.MAX_HEIGHT * ratio;
             HEIGHT_2 = Utils.MAX_HEIGHT * (1f - ratio);
@@ -142,21 +144,23 @@ public class ShadeTwo {
         //adjust add button in layout through height
         float maxImageHeightForAdd = HEIGHT_1 - HEIGHT_1 * Utils.MIN_ADD_RATIO;
         if(!Utils.shouldShowAddInLayout() || HEIGHT_2 >= HEIGHT_1 * 0.9f){
+            if(Utils.HAS_FIXED_DIMENSIONS) HEIGHT_1 = Utils.MAX_HEIGHT;
             HEIGHT_2 = HEIGHT_1;
             beanShade2.setAddInLayout(false);
         }else if(HEIGHT_2 > maxImageHeightForAdd && maxImageHeightForAdd >= Utils.MIN_HIGHT){
+            if(Utils.HAS_FIXED_DIMENSIONS) HEIGHT_1 = Utils.MAX_HEIGHT;
             HEIGHT_2 = maxImageHeightForAdd;
             beanShade2.setAddInLayout(true);
         }else if(HEIGHT_2 > maxImageHeightForAdd){
             float height1Increase = Utils.MIN_HIGHT - maxImageHeightForAdd;
-            HEIGHT_1 = HEIGHT_1 + height1Increase > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : HEIGHT_1 + height1Increase;
+            HEIGHT_1 = Utils.HAS_FIXED_DIMENSIONS || HEIGHT_1 + height1Increase > Utils.MAX_HEIGHT ? Utils.MAX_HEIGHT : HEIGHT_1 + height1Increase;
             HEIGHT_2 = Utils.MIN_HIGHT;
             beanShade2.setAddInLayout(true);
         }else beanShade2.setAddInLayout(true);
 
         //post width calculation
         float sumWidth = WIDTH_1 + WIDTH_2;
-        if(sumWidth > Utils.MAX_WIDTH){
+        if(sumWidth > Utils.MAX_WIDTH || Utils.HAS_FIXED_DIMENSIONS){
             float ratio =  (float)width1/ (width1 + width2);
             WIDTH_1 = Utils.MAX_WIDTH * ratio;
             WIDTH_2 = Utils.MAX_WIDTH * (1f - ratio);
